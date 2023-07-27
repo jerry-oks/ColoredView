@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +23,27 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-lm-NSX">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="577"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98b-sv-Ocq">
+                                                <rect key="frame" x="318" y="534" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="98b-sv-Ocq" secondAttribute="height" multiplier="1:1" id="QNM-S6-XIB"/>
+                                                    <constraint firstAttribute="width" constant="35" id="Zdk-ag-KmS"/>
+                                                </constraints>
+                                                <buttonConfiguration key="configuration" style="gray">
+                                                    <imageReference key="image" image="wand.and.stars" catalog="system" symbolScale="default"/>
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="magicColorButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOC-a6-umT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="98b-sv-Ocq" secondAttribute="trailing" constant="8" id="UbH-Ha-bqN"/>
+                                            <constraint firstAttribute="bottom" secondItem="98b-sv-Ocq" secondAttribute="bottom" constant="8" id="xzD-oN-ygh"/>
+                                        </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-yc-lAa" userLabel="Sliders Stack View">
                                         <rect key="frame" x="0.0" y="597" width="361" height="122"/>
@@ -47,9 +69,12 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-UR-jFN" userLabel="Red Horizontal Slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-UR-jFN" userLabel="Red Horizontal Slider">
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="redSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="GhQ-il-hPF"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -74,9 +99,12 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-Jv-KDV" userLabel="Green Horizontal Slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.77000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-Jv-KDV" userLabel="Green Horizontal Slider">
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="greenSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="Znf-RR-kuo"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -101,9 +129,12 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8hV-Fg-e2N" userLabel="Blue Horizontal Slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8hV-Fg-e2N" userLabel="Blue Horizontal Slider">
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="blueSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="spp-2U-03f"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -123,13 +154,26 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1d-tF-kL7" secondAttribute="trailing" constant="16" id="igL-H8-iAl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueComponentLabel" destination="6fa-ot-28J" id="HfC-B0-Vte"/>
+                        <outlet property="blueComponentSlider" destination="8hV-Fg-e2N" id="t1A-g9-muy"/>
+                        <outlet property="colorView" destination="CyK-lm-NSX" id="3hk-ME-cKZ"/>
+                        <outlet property="greenComponentLabel" destination="IOf-E9-FnT" id="sTm-ik-aZw"/>
+                        <outlet property="greenComponentSlider" destination="9l9-Jv-KDV" id="7I5-e9-YOk"/>
+                        <outlet property="redComponentLabel" destination="T5O-w2-689" id="urt-GL-T0W"/>
+                        <outlet property="redComponentSlider" destination="8uJ-UR-jFN" id="6hP-MI-Yvd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34.351145038167935" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-540" y="-39"/>
         </scene>
     </scenes>
     <resources>
+        <image name="wand.and.stars" catalog="system" width="128" height="115"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
