@@ -60,7 +60,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-w2-689">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-w2-689">
                                                         <rect key="frame" x="58" y="0.0" width="50" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="awR-1x-9uP"/>
@@ -69,11 +69,11 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-UR-jFN" userLabel="Red Horizontal Slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-UR-jFN" userLabel="Red Horizontal Slider">
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="redSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="GhQ-il-hPF"/>
+                                                            <action selector="redSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="VPa-PM-aTp"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -90,7 +90,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-E9-FnT">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-E9-FnT">
                                                         <rect key="frame" x="58" y="0.0" width="50" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="DPf-EH-H4u"/>
@@ -99,11 +99,11 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.77000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-Jv-KDV" userLabel="Green Horizontal Slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-Jv-KDV" userLabel="Green Horizontal Slider">
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <connections>
-                                                            <action selector="greenSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="Znf-RR-kuo"/>
+                                                            <action selector="greenSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="TVK-tT-Pik"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -120,7 +120,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-ot-28J">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-ot-28J">
                                                         <rect key="frame" x="58" y="0.0" width="50" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="tXP-yf-cwG"/>
@@ -133,7 +133,7 @@
                                                         <rect key="frame" x="114" y="0.0" width="249" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <connections>
-                                                            <action selector="blueSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="spp-2U-03f"/>
+                                                            <action selector="blueSliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="THE-u1-LiV"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
@@ -161,7 +161,7 @@
                         <outlet property="greenComponentLabel" destination="IOf-E9-FnT" id="sTm-ik-aZw"/>
                         <outlet property="greenComponentSlider" destination="9l9-Jv-KDV" id="7I5-e9-YOk"/>
                         <outlet property="redComponentLabel" destination="T5O-w2-689" id="urt-GL-T0W"/>
-                        <outlet property="redComponentSlider" destination="8uJ-UR-jFN" id="6hP-MI-Yvd"/>
+                        <outlet property="redComponentSlider" destination="8uJ-UR-jFN" id="l1K-BB-AuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
