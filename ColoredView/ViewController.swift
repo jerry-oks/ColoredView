@@ -50,7 +50,6 @@ final class ViewController: UIViewController {
         greenComponentSlider.setValue(Float.random(in: 0...1), animated: true)
         blueComponentSlider.setValue(Float.random(in: 0...1), animated: true)
         
-        
         redSliderValueChanged()
         greenSliderValueChanged()
         blueSliderValueChanged()
