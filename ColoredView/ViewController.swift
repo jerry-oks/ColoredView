@@ -7,19 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet var redComponentLabel: UILabel!
-    @IBOutlet var greenComponentLabel: UILabel!
-    @IBOutlet var blueComponentLabel: UILabel!
+final class ViewController: UIViewController {
+    @IBOutlet private var redComponentLabel: UILabel!
+    @IBOutlet private var greenComponentLabel: UILabel!
+    @IBOutlet private var blueComponentLabel: UILabel!
     
-    @IBOutlet var redComponentSlider: UISlider!
-    @IBOutlet var greenComponentSlider: UISlider!
-    @IBOutlet var blueComponentSlider: UISlider!
+    @IBOutlet private var redComponentSlider: UISlider!
+    @IBOutlet private var greenComponentSlider: UISlider!
+    @IBOutlet private var blueComponentSlider: UISlider!
     
-    @IBOutlet var colorView: UIView!
+    @IBOutlet private var colorView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         colorView.layer.cornerRadius = 12
         magicColorButtonTapped()
     }
@@ -34,21 +35,22 @@ class ViewController: UIViewController {
         label.text = String(format: "%.2f", slider.value)
     }
     
-    @IBAction func redSliderValueChanged() {
+    @IBAction private func redSliderValueChanged() {
         valueChanged(of: redComponentSlider, redComponentLabel)
     }
-    @IBAction func greenSliderValueChanged() {
+    @IBAction private func greenSliderValueChanged() {
         valueChanged(of: greenComponentSlider, greenComponentLabel)
     }
-    @IBAction func blueSliderValueChanged() {
+    @IBAction private func blueSliderValueChanged() {
         valueChanged(of: blueComponentSlider, blueComponentLabel)
     }
     
-    @IBAction func magicColorButtonTapped() {
-        redComponentSlider.value = Float.random(in: 0...1)
-        greenComponentSlider.value = Float.random(in: 0...1)
-        blueComponentSlider.value = Float.random(in: 0...1)
-
+    @IBAction private func magicColorButtonTapped() {
+        redComponentSlider.setValue(Float.random(in: 0...1), animated: true)
+        greenComponentSlider.setValue(Float.random(in: 0...1), animated: true)
+        blueComponentSlider.setValue(Float.random(in: 0...1), animated: true)
+        
+        
         redSliderValueChanged()
         greenSliderValueChanged()
         blueSliderValueChanged()
