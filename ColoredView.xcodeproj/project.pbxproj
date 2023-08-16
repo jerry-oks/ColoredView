@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		3B2AF6762A7309B60055700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AF6752A7309B60055700A /* AppDelegate.swift */; };
 		3B2AF6782A7309B60055700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AF6772A7309B60055700A /* SceneDelegate.swift */; };
-		3B2AF67A2A7309B60055700A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AF6792A7309B60055700A /* ViewController.swift */; };
+		3B2AF67A2A7309B60055700A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AF6792A7309B60055700A /* SettingViewController.swift */; };
 		3B2AF67D2A7309B60055700A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AF67B2A7309B60055700A /* Main.storyboard */; };
 		3B2AF67F2A7309B70055700A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AF67E2A7309B70055700A /* Assets.xcassets */; };
 		3B2AF6822A7309B70055700A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AF6802A7309B70055700A /* LaunchScreen.storyboard */; };
+		3B4681C32A8B936900EDF800 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4681C22A8B936900EDF800 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B2AF6722A7309B60055700A /* ColoredView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoredView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2AF6752A7309B60055700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B2AF6772A7309B60055700A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B2AF6792A7309B60055700A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B2AF6792A7309B60055700A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		3B2AF67C2A7309B60055700A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B2AF67E2A7309B70055700A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B2AF6812A7309B70055700A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B2AF6832A7309B70055700A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4681C22A8B936900EDF800 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				3B2AF6752A7309B60055700A /* AppDelegate.swift */,
 				3B2AF6772A7309B60055700A /* SceneDelegate.swift */,
-				3B2AF6792A7309B60055700A /* ViewController.swift */,
+				3B4681C22A8B936900EDF800 /* MainViewController.swift */,
+				3B2AF6792A7309B60055700A /* SettingViewController.swift */,
 				3B2AF67B2A7309B60055700A /* Main.storyboard */,
 				3B2AF67E2A7309B70055700A /* Assets.xcassets */,
 				3B2AF6802A7309B70055700A /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2AF67A2A7309B60055700A /* ViewController.swift in Sources */,
+				3B2AF67A2A7309B60055700A /* SettingViewController.swift in Sources */,
 				3B2AF6762A7309B60055700A /* AppDelegate.swift in Sources */,
 				3B2AF6782A7309B60055700A /* SceneDelegate.swift in Sources */,
+				3B4681C32A8B936900EDF800 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +297,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,8 +329,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
