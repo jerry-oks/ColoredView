@@ -11,7 +11,7 @@ protocol SettingViewControllerDelegate: AnyObject {
     func setMainViewColor(from settingView: UIView)
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     // MARK: - Public Properties
     var color: UIColor!
     
